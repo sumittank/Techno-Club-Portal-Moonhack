@@ -1,0 +1,347 @@
+/* Page Container */
+.container {
+    margin-top: 40px;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Search Bar */
+.search-bar {
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+/* Club Section */
+.club-section {
+    margin-bottom: 50px;
+}
+
+/* Club Card */
+.club-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    max-width: 350px;
+    margin: 0 auto 20px;
+    border: 1px solid #343a40;
+    width: 300px;
+    height: 350px;
+}
+
+/* Club Card Hover - Lighting Effect */
+.club-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+    /* Soft blue glow */
+}
+
+/* Club Name */
+.club-name {
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+}
+
+/* Event Title */
+.event-title {
+    font-weight: bold;
+    color: #343a40;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/* Club Description */
+.club-description {
+    color: #495057;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+/* Join Button */
+.join-btn {
+    align-self: center;
+    margin-top: auto;
+}
+
+/* Uniform Card Sizes */
+.club-card.border {
+    border: 1px solid #343a40;
+}
+
+
+
+
+
+
+
+/* Announcements List */
+.list-group-item {
+    transition: background-color 0.2s, transform 0.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Hover Effect */
+.list-group-item:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-3px);
+}
+
+/* Countdown Timer */
+.countdown {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Reaction Buttons */
+.reaction-buttons button {
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.reaction-buttons button:hover {
+    transform: scale(1.1);
+}
+/* Announcements Container */
+.announcements-container {
+    
+            margin-bottom: 50px;
+            /* Adjust as needed */
+    /* Pushes heading downward */
+}
+
+/* Announcements Title */
+.announcements-title {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+}
+
+
+/* Announcement Item */
+.announcement {
+    overflow: hidden;
+    white-space: nowrap;
+    background: #f8f9fa;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Marquee Animation */
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite;
+}
+
+/* Keyframes for Scrolling */
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.announcement:hover {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+    transition: box-shadow 0.2s;
+}
+
+.announcement {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Announcements List */
+.list-group-item {
+    transition: background-color 0.2s, transform 0.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Announcements Container */
+.announcements-container {
+    margin-bottom: 80px;
+}
+
+/* Announcements List */
+.list-group {
+    padding: 0;
+}
+
+/* Announcement Card */
+.list-group-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: all 0.2s ease;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    background: linear-gradient(145deg, #f3f3f3, #ffffff);
+}
+
+/* Hover Effect */
+.list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #ffffff, #f1f1f1);
+}
+
+/* Label Badge */
+.badge {
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Countdown */
+.countdown {
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-align: right;
+}
+
+/* Reaction Buttons */
+.reaction-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+.reaction-buttons button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    color: #495057;
+    padding: 5px;
+}
+
+.reaction-buttons button:hover {
+    transform: scale(1.2);
+    color: #007bff;
+}
+
+/* View More Button */
+.btn-primary,
+.btn-secondary {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+
+
+
+
+/* Confetti Container */
+.confetti-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Confetti Particles */
+.confetti {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    animation: confetti-fall 3s ease-out forwards;
+    opacity: 0.9;
+}
+
+/* Falling Animation */
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+    }
+}
+
+/* Reaction Buttons */
+.reaction-buttons button {
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.reaction-buttons button:hover {
+    transform: scale(1.1);
+}
+
+
+/* Container Styling */
+.single-event-container {
+    margin-top: 50px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 400px;
+}
+
+/* Center Button */
+.center-btn {
+    grid-column: span 2;
+    margin-top: 10px;
+}
