@@ -1,0 +1,193 @@
+/* General Container */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(0, 45, 179, 0.5);
+  color: white;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 80px;
+}
+
+/* CTA Button */
+.cta-button {
+  background: #ffcc00;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.cta-button:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+
+/* Club Cards */
+.featured-clubs {
+  margin-top: 40px;
+}
+
+.club-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.club-card {
+  background: rgba(255, 255, 255, 0.1);
+  /* Transparent Glass Effect */
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Glowing effect on hover */
+.club-card:hover {
+  transform: translateY(-5px);
+  border-color: #00d1ff;
+  box-shadow: 0 0 15px #00d1ff;
+}
+
+/* Upcoming Events */
+.events {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.events ul {
+  list-style: none;
+  padding: 0;
+}
+
+.events li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.events li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px #00d1ff;
+}
+
+/* Explore More Button */
+.explore-more-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s, transform 0.2s;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.explore-more-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Tech News */
+.tech-news {
+  margin-top: 40px;
+}
+
+.news-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.news-grid article {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  width: 50%;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.news-grid article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #00d1ff;
+  border-color: #00d1ff;
+}
+
+/* Ensure full height for the page */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Make home-container take at least full height */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer styling */
+footer {
+  width: 100%;
+  background: rgba(0, 0, 0, 1);
+  /* Slight transparency for glass effect */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  /* Ensures footer sticks to the bottom */
+  z-index: 2;
+  position: relative;
+}
+
+/* Full-screen fixed particles background */
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+

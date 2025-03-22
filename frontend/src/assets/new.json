@@ -1,0 +1,21 @@
+[
+    {
+      "aadhaarNumber": "123456789012",
+      "name": "Ravi Kumar",
+      "dob": "1990-05-10",
+      "gender": "Male"
+    },
+    {
+      "aadhaarNumber": "987654321098",
+      "name": "Priya Sharma",
+      "dob": "1995-07-22",
+      "gender": "Female"
+    },
+    {
+      "aadhaarNumber": "567890123456",
+      "name": "Amit Verma",
+      "dob": "1987-12-03",
+      "gender": "Male"
+    }
+  ]
+  
